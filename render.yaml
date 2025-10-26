@@ -1,9 +1,0 @@
-services:
-  - type: web
-    name: audioxtractor-bot
-    runtime: python
-    buildCommand: "pip install -r requirements.txt && apt-get update && apt-get install -y ffmpeg"
-    startCommand: "python bot.py"
-    envVars:
-      - key: PYTHON_VERSION
-        value: 3.12.0
